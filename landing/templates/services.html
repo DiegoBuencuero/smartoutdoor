@@ -1,0 +1,184 @@
+{% extends "base.html"%}
+{% load static %}
+{% block content %}
+
+<style>
+  .card {
+    
+    border-radius: 1em; 
+    padding: 1.5em; 
+    height: 100%; 
+    background-color: #fff;  
+  }
+  
+  .card:hover {
+    background-color: #fcfefa;
+    box-shadow: 5px 5px 10px rgba(139, 197, 72, 0.7); 
+  }
+  
+  .img {
+    width: 110%; 
+    height: auto; 
+    border-radius: 0.5em; 
+  }
+  
+  .texto-card {
+    margin-top: 1.5em; 
+    font-size: 1.1rem; 
+    color: #8bc548; !important
+    font-weight: bold; !important
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    padding : 0.5em;
+    text-align: justify;
+  }
+  
+  .img-container {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+  }
+  
+
+  .img-4{
+    width: 90%; 
+    height: auto; 
+  }
+  .texto-servi{
+    font-size:1.1rem;
+    line-height: 1.5;
+    text-align: justify;
+  }
+  .h3{
+    font-weight: bold; !important
+  }
+  body {
+    background-color: #f4f4f4 ;
+  }
+</style>
+<section class="ftco-section ftco-services">
+  <h1 class="mb-3 bread text-center mt-5 mb-5" style="font-weight: bold;">VANTAGENS DO <span style="color: #8bc548;font-weight: bold;">OUTDOOR</span></h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 ftco-animate">
+        <div class="card"> 
+          <div class="row">
+            <div class="col-md-4 img-container">
+              <img class="img" src="{% static 'images/1.png' %}" alt="Fácil Memorização">
+            </div>
+            <div class="col-md-8">
+              <h3 class="texto-card">Direcionamento de Público</h3>
+            </div>
+          </div>
+          <div>
+            <p class="card-text">Tende a direcionar o público a consumir o produto e/ou serviço, uma vez que está divulgado nas principais vias comerciais e de acesso.</p>
+          </div>     
+        </div>
+      </div>
+      <div class="col-md-3 ftco-animate">
+        <div class="card">
+          <div class="row">
+            <div class="col-md-4 img-container">
+              <img class="img" src="{% static 'images/2.png' %}" alt="Fácil Memorização">
+            </div>
+            <div class="col-md-8">
+              <h3 class="texto-card">Fácil Memorização</h3>
+            </div>
+          </div>
+          <div>
+            <p class="card-text">Facilidade e simplicidade de memorização da mensagem, pois possui leitura rápida e objetiva.</p>
+          </div>    
+        </div>
+      </div>
+      <div class="col-md-3 ftco-animate">
+        <div class="card">
+          <div class="row">
+            <div class="col-md-4 mt-4 img-container">
+              <img class="img" src="{% static 'images/3.png' %}" alt="Fácil Memorização">
+            </div>
+            <div class="col-md-8">
+              <h3 class="texto-card">Exibição</h3>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <p class="card-text">Exibição 24 horas por dia, durante 14 dias em um espaço de 27 metros quadrados.</p>
+          </div>     
+        </div>
+      </div>
+      <div class="col-md-3 ftco-animate">
+        <div class="card">
+          <div class="row">
+            <div class="col-md-4 img-container">
+              <img class="img img-4" src="{% static 'images/4.png' %}" alt="Fácil Memorização">
+            </div>
+            <div class="col-md-8">
+              <h3 class="texto-card">Você escolhe o momento</h3>
+            </div>
+          </div>
+          <div class="row">
+            <p class="card-text">Sua campanha pode ser disponibilizada em momentos oportunos, como por exemplo datas especiais do comércio, e sua substituição é rápida.</p>
+          </div>     
+        </div>
+      </div>
+    </div>
+  </div>
+<section>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="card" style="background-color: ;">
+          <div class="card-body">
+            <img src="{% static 'images/cartel1.jpg' %}" class="img-fluid" alt="Imagen">
+            <h3 class="card-title mt-3" style="color: #8bc548; text-transform: uppercase; font-weight: bold;">Empena vertical</h3>
+            <p class="card-text">Painel estrategicamente instalado nas laterais de edifícios no coração das cidades e em vias de grande circulação. Fixado por uma estrutura metálica envolvendo a tela publicitária, destaca-se pela capacidade de adaptação a grandes formatos, garantindo um impacto visual excepcional para o anunciante.</p>
+          </div>
+        </div>
+      </div>   
+      <div class="col-md-6 mb-4">
+        <div class="card" style="background-color: ;">
+          <div class="card-body">
+            <img src="{% static 'images/cartel2.jpg' %}" class="img-fluid" alt="Imagen">
+            <h3 class="card-title mt-3" style="color: #8bc548; text-transform: uppercase; font-weight: bold;">Front light</h3>
+            <p class="card-text">Mais de grande fluxo, este painel publicitário impresso em lona oferece uma presença marcante dia e noite. Sua versatilidade permite sua construção em qualquer dimensão ou formato, seguindo as tendências do mercado nacional e garantindo máxima visibilidade e impacto.</p>
+          </div>
+        </div>      
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="card" style="background-color: ;">
+          <div class="card-body">
+            <img src="{% static 'images/cartel1.jpg' %}" class="img-fluid" alt="Imagen">
+            <h3 class="card-title mt-3" style="color: #8bc548; text-transform: uppercase; font-weight: bold;">Outdoor</h3>
+            <p class="card-text">Outdoor iluminado, destacando marcas, produtos e serviços com cores vibrantes. Ideal para locais de grande fluxo, este painel publicitário impresso em lona oferece uma presença marcante dia e noite. Sua versatilidade permite sua construção em qualquer dimensão ou formato, seguindo as tendências do mercado nacional e garantindo máxima visibilidade e impacto.</p>
+          </div>
+        </div>
+      </div>   
+      <div class="col-md-6 mb-4">
+        <div class="card" style="background-color:;">
+          <div class="card-body">
+            <img src="{% static 'images/cartel2.jpg' %}" class="img-fluid" alt="Imagen">
+            <h3 class="card-title mt-3" style="color: #8bc548; text-transform: uppercase; font-weight: bold;">Outdoor iluminado </h3>
+            <p class="card-text">Outdoor iluminado, destacando marcas, produtos e serviços com cores vibrantes. Ideal para locais de grande fluxo, este painel publicitário impresso em lona oferece uma presença marcante dia e noite. Sua versatilidade permite sua construção em qualquer dimensão ou formato, seguindo as tendências do mercado nacional e garantindo máxima visibilidade e impacto.</p>
+          </div>
+        </div>      
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% endblock %}
+{% block scrips%}
+<script>
+  document.addEventListener("DOMContentLoaded",function(){
+    $('.nav-link').removeClass('active');
+    $('#services-navlink').addClass('active');
+   
+  });  
+</script>
+{% endblock %}

@@ -1,0 +1,92 @@
+{% extends "base.html"%}
+{% load static %}
+{% block content %}
+<style>
+  .titulo-carusel {
+    color: #fff;
+    font-size: 50px; 
+    font-weight: bold; 
+    text-align: center; 
+  }
+  .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); 
+  }
+  .btn {
+    background-color: #a8c337;
+    display: inline-block;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-decoration: none; 
+    transition: background-color 0.3s;
+  }
+
+  .btn:hover { 
+    background-color: #fff; 
+    color: #a8c337; !important
+    font-weight: bold;
+  }
+ 
+</style>
+<section class="home-slider owl-carousel">
+  <div class="slider-item" style="background-image: url({% static 'images/bg1.jpg' %})" data-stellar-background-ratio="0.5">
+    <div class="mask"></div> 
+    <div class="container">
+      <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+        <div class="col-md-9 titulo-carusel text ftco-animate">
+          <h3 class="titulo-carusel">Soluções Criativas na Publicidade Externa</h3>
+          <p><a href="#" class="btn animate__animated animate__heartBeat px-4 py-3 mt-3">Contatenos</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slider-item" style="background-image: url({% static 'images/bg3.jpg' %})" data-stellar-background-ratio="0.5">
+    <div class="mask"></div> 
+    <div class="container">
+      <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+        <div class="col-md-9 text titulo-carusel ftco-animate">
+          <h3 class="titulo-carusel">Transformando Espaços Urbanos com Soluções Criativas</h3>       
+          <p><a href="#" class="btn animate__animated animate__heartBeat px-4 py-3 mt-3">Contatenos</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="ftco-section ftco-no-pt ftco-no-pb mb-5 ">
+  <div class="row no-gutters justify-content-center">
+    <div class="col-md-5 p-md-5 mt-5 mt-5">
+      <img src="{% static 'images/cartel2.jpg' %}" class="img-fluid" alt="Imagen Index 3">
+    </div>   
+    <div class="col-md-6 wrap-about py-4 py-md-5 ftco-animate">
+      <div class="heading-section">
+        <div class="pl-md-5 ml-md-5 pt-md-5">
+          <h2 class="mb-2" style="font-size: 40px;"><strong>Impulsione suas vendas com a divulgação de sua marca em nossos painéis.</strong></h2>
+        </div>
+      </div>
+      <div class="pl-md-5 ml-md-5 ">
+        <p style="font-size: 20px;"> Alcance um público maior e impulsione o reconhecimento da sua marca através da nossa rede de anúncios estratégicos. Potencialize seus resultados e destaque-se no mercado com a visibilidade que os nossos painéis oferecem.</p>         
+        <ul style="color: #8bc548; font-size: 20px; list-style-type: none; padding-left: 25px;">
+          <li><span style="margin-right: 10px; font-size: 30px;">&#10003;</span>Destaque garantido com alto impacto!</li>
+          <li><span style="margin-right: 10px; font-size: 30px;">&#10003;</span>Mais dinamismo para sua campanha!</li>
+          <li><span style="margin-right: 10px; font-size: 30px;">&#10003;</span>Melhor custo-benefício!</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
+{% block scrips%}
+<script>
+  document.addEventListener("DOMContentLoaded",function(){
+    $('.nav-link').removeClass('active');
+    $('#index-navlink').addClass('active');
+   
+  });
+  </script>
+{% endblock %}
