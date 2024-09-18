@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-ut$^o*mb*idcn@t!%87p0-7=s6%sl9&-czaa%4_ti8786l&u_o
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['smartoutdoorsm.pythonanywhere.com', '127.0.0.1']
 
 
 # Application definition
